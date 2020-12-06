@@ -6,7 +6,7 @@ Based on:
 4. Node.js  
 ## Introduction  
 
-![](https://github.com/Qiming-Liu/ShootGame/raw/master/res/intro.gif)  
+![](https://github.com/Qiming-Liu/ShootGame/raw/main/res/intro.gif)   
   
 A web game similar to INVERSUS.
 The game only allow the boss player to shoot.
