@@ -1,0 +1,43 @@
+.controller{
+    display: table;
+    margin: 0 auto;
+}
+
+table.map {
+    background-color: #EBEBEB;
+    text-align: center;
+    border-collapse: collapse;
+    border-spacing: 0;
+    table-layout: fixed;
+}
+
+table.map td, table.map th {
+    border: 1px solid #AAAAAA;
+    padding: calc(1.22vh) calc(1.22vh);
+}
+
+.ui {
+    margin-top: calc(5vh);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+table.ctrl {
+    text-align: center;
+    margin-top: calc(2vh);
+}
+
+table.ctrl td, table.ctrl th {
+    width: calc(3vh);
+    height: calc(3vh);
+}
+
+.icon {
+    display: inline-block;
+    width: calc(4vh);
+    height: calc(4vh);
+    stroke-width: 0;
+    stroke: currentColor;
+    fill: #1C6EA4;
+}

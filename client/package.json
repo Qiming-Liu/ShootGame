@@ -1,0 +1,26 @@
+{
+  "name": "com.pross.shootgame",
+  "displayName": "ShootGame",
+  "version": "1.0.0",
+  "description": "2D multiplayer web game based on cordova and nodejs.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "ecosystem:cordova"
+  ],
+  "author": "Qiming-Liu",
+  "license": "Apache-2.0",
+  "devDependencies": {},
+  "cordova": {
+    "platforms": [
+      "android",
+      "browser"
+    ]
+  },
+  "dependencies": {
+    "cordova-android": "9.0.0",
+    "cordova-browser": "6.0.0"
+  }
+}

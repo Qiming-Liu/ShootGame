@@ -1,0 +1,17 @@
+{
+  "name": "server",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "start": "pm2 start app.js",
+    "stop": "pm2 stop app.js"
+  },
+  "author": "Qiming-Liu",
+  "license": "Apache-2.0",
+  "dependencies": {
+    "rxjs": "^6.6.3",
+    "socket.io": "^2.3.0"
+  },
+  "devDependencies": {}
+}

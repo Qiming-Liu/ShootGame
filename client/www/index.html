@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <!--    <meta http-equiv="Content-Security-Policy" content="default-src 'self' data: gap: https://ssl.gstatic.com 'unsafe-eval'; style-src 'self' 'unsafe-inline'; media-src *; img-src 'self' data: content:;">-->
+    <meta name="format-detection" content="telephone=no">
+    <meta name="msapplication-tap-highlight" content="no">
+    <meta name="viewport"
+          content="initial-scale=1, width=device-width, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover">
+    <meta name="color-scheme" content="light dark">
+    <link rel="stylesheet" href="css/import/glowing-buttons.css">
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="css/player.css">
+    <svg style="position: absolute; width: 0; height: 0; overflow: hidden;" version="1.1"
+         xmlns="http://www.w3.org/2000/svg">
+        <defs>
+            <symbol id="icon-rocket" viewBox="0 0 32 32">
+                <path d="M22 2l-10 10h-6l-6 8c0 0 6.357-1.77 10.065-0.94l-10.065 12.94 13.184-10.255c1.839 4.208-1.184 10.255-1.184 10.255l8-6v-6l10-10 2-10-10 2z"></path>
+            </symbol>
+            <symbol id="icon-arrow-up" viewBox="0 0 32 32">
+                <path d="M27.414 12.586l-10-10c-0.781-0.781-2.047-0.781-2.828 0l-10 10c-0.781 0.781-0.781 2.047 0 2.828s2.047 0.781 2.828 0l6.586-6.586v19.172c0 1.105 0.895 2 2 2s2-0.895 2-2v-19.172l6.586 6.586c0.39 0.39 0.902 0.586 1.414 0.586s1.024-0.195 1.414-0.586c0.781-0.781 0.781-2.047 0-2.828z"></path>
+            </symbol>
+            <symbol id="icon-arrow-right" viewBox="0 0 32 32">
+                <path d="M19.414 27.414l10-10c0.781-0.781 0.781-2.047 0-2.828l-10-10c-0.781-0.781-2.047-0.781-2.828 0s-0.781 2.047 0 2.828l6.586 6.586h-19.172c-1.105 0-2 0.895-2 2s0.895 2 2 2h19.172l-6.586 6.586c-0.39 0.39-0.586 0.902-0.586 1.414s0.195 1.024 0.586 1.414c0.781 0.781 2.047 0.781 2.828 0z"></path>
+            </symbol>
+            <symbol id="icon-arrow-down" viewBox="0 0 32 32">
+                <path d="M27.414 19.414l-10 10c-0.781 0.781-2.047 0.781-2.828 0l-10-10c-0.781-0.781-0.781-2.047 0-2.828s2.047-0.781 2.828 0l6.586 6.586v-19.172c0-1.105 0.895-2 2-2s2 0.895 2 2v19.172l6.586-6.586c0.39-0.39 0.902-0.586 1.414-0.586s1.024 0.195 1.414 0.586c0.781 0.781 0.781 2.047 0 2.828z"></path>
+            </symbol>
+            <symbol id="icon-arrow-left" viewBox="0 0 32 32">
+                <path d="M12.586 27.414l-10-10c-0.781-0.781-0.781-2.047 0-2.828l10-10c0.781-0.781 2.047-0.781 2.828 0s0.781 2.047 0 2.828l-6.586 6.586h19.172c1.105 0 2 0.895 2 2s-0.895 2-2 2h-19.172l6.586 6.586c0.39 0.39 0.586 0.902 0.586 1.414s-0.195 1.024-0.586 1.414c-0.781 0.781-2.047 0.781-2.828 0z"></path>
+            </symbol>
+        </defs>
+    </svg>
+    <title>ShootGame</title>
+</head>
+<body>
+<div class="ui">
+    <div class="start">
+        <b class="s0">Please Choose Server</b>
+        <a class="s1">Localhost</a>
+        <a class="s2">Android</a>
+        <a class="s3">Cloud</a>
+        <a class="s4">Custom</a>
+    </div>
+
+    <table class="map">
+        <tbody class="xy"></tbody>
+    </table>
+</div>
+<div class="controller">
+    <table class="ctrl">
+        <tbody>
+        <tr>
+            <td class="ctrl11"></td>
+            <td class="ctrl21"></td>
+            <td class="ctrl31"></td>
+            <td class="ctrl41"></td>
+            <td class="ctrl51"></td>
+            <td class="ctrl61"></td>
+            <td class="ctrl71"></td>
+            <td class="ctrl81"></td>
+        </tr>
+        <tr>
+            <td class="ctrl12"></td>
+            <td class="ctrl22"></td>
+            <td class="ctrl32"></td>
+            <td class="ctrl42"></td>
+            <td class="ctrl52"></td>
+            <td class="ctrl62"></td>
+            <td class="ctrl72"></td>
+            <td class="ctrl82"></td>
+        </tr>
+        <tr>
+            <td class="ctrl13"></td>
+            <td class="ctrl23"></td>
+            <td class="ctrl33"></td>
+            <td class="ctrl43"></td>
+            <td class="ctrl53"></td>
+            <td class="ctrl63"></td>
+            <td class="ctrl73"></td>
+            <td class="ctrl83"></td>
+        </tr>
+        </tbody>
+    </table>
+</div>
+<script type="text/javascript" src="js/import/jquery.js"></script>
+<script type="text/javascript" src="js/import/howler.js"></script>
+<script type="text/javascript" src="js/import/socket.io.js"></script>
+<script type="text/javascript" src="js/import/rxjs.umd.min.js"></script>
+
+<script type="text/javascript" src="js/touch-mouse.js"></script>
+<script type="text/javascript" src="js/map.js"></script>
+<script type="text/javascript" src="js/controller.js"></script>
+<script type="text/javascript" src="js/socket.js"></script>
+<script type="text/javascript" src="js/bgm.js"></script>
+<script type="text/javascript" src="js/game-start.js"></script>
+</body>
+</html>
